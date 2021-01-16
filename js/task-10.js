@@ -1,43 +1,9 @@
-function normalizeInput(input) {
-
-  const normalizedInput = input.toLowerCase(); 
-
-  return normalizedInput;
-}
-
-
- normalizeInput('Привет мир') 
- normalizeInput('Это НЕ СпаМ') // 'это не спам'.
-normalizeInput('Большие СКИДКИ')// 'большие скидки'.
+function makeMessage (name, price) {
+  // Пиши код ниже этой строки
+   const message = `Вы выбрали ${name}, цена за штуку ${price} кредитов`;
+  // Пиши код выше этой строки
+  return message;
+};
+console.log( makeMessage('Реактор', 8000))
 
 
-
-function checkForName(fullName, name) {
-
-  const result = fullName.includes(name); 
-  
-  return result;
-}
-
-
-checkForName('Егор Колбасов', 'Егор') //возвращает true.
- checkForName('Егор Колбасов', 'егор') //возвращает false.
-
-
-
-function checkForSpam(message) {
-
-  let result;
-	
-  message = message.toLowerCase();
-  
- result = message.includes('spam') || message.includes('sale');
-  
-  
-  return result;
-}
-
-
-checkForSpam('Latest technology news') // false.
-checkForSpam('JavaScript weekly newsletter')// false.
- checkForSpam('Get best sale offers now!')// true.

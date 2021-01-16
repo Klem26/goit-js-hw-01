@@ -1,42 +1,23 @@
-function getSubstring(string, length) {
+function add(a, b, c) {
+ 
+  
+  return a+b+c
+  
 
-  const substring = (string.slice(0,length)); // Дополни эту строку
-
-  return substring;
-}
-getSubstring('Привет мир', 3) // 'При'.
-
- getSubstring('Привет мир', 6) // 'Привет'.
-
- getSubstring('Привет мир', 10) // 'Привет мир'.
-
-
-
-
-
-
-function formatMessage(message, maxLength) {
-
-  let result;
-
-  if (message.length > maxLength) {
-    
-
-    result = message.slice(0, maxLength) + '...';
-    
-  } else {
-    
-  result = message;
 }
 
-  return result;
-}
+add(2, 5, 8); // 15
+
+console.log(add(15, 27, 10));
+console.log(add(10, 20, 30));
+console.log(add(5, 10, 15));
 
 
 
- formatMessage('Curabitur ligula sapien', 16) // 'Curabitur ligula...'.
- formatMessage('Curabitur ligula sapien', 23) // 'Curabitur ligula sapien'.
-// Вызов функции formatMessage('Vestibulum facilisis purus nec', 20) возвращает 'Vestibulum facilisis...'.
-// Вызов функции formatMessage('Vestibulum facilisis purus nec', 30) возвращает 'Vestibulum facilisis purus nec'.
-formatMessage('Nunc sed turpis a felis in nunc fringilla', 15) // 'Nunc sed turpis...'.
-// Вызов функции formatMessage('Nunc sed turpis a felis in nunc fringilla', 41) возвращает 'Nunc sed turpis a felis in nunc fringilla'.
+
+
+
+
+
+
+ 
